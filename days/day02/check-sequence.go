@@ -12,10 +12,6 @@ func CheckSequenceDoubles(n int) bool {
 
 	s := strconv.Itoa(n)
 
-	if len(s)%2 != 0 {
-		return false
-	}
-
 	half := len(s) / 2
 	return s[:half] == s[half:]
 }
