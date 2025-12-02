@@ -13,8 +13,8 @@ const message = "Day 02. First problem: %d. Second problem: %d"
 //go:embed *.txt
 var inputFS embed.FS
 
-func Run() string {
-	lines, _ := utils.ReadLines(inputFS, "day02.txt")
+func Run(filename string) string {
+	lines, _ := utils.ReadLines(inputFS, filename)
 
 	parts := strings.Split(lines[0], ",")
 	total1 := 0

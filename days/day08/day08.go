@@ -2,6 +2,6 @@ package day08
 
 const message = "Day 08 not implemented yet"
 
-func Run() string {
+func Run(_ string) string {
 	return message
 }

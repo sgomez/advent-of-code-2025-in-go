@@ -12,10 +12,10 @@ const message = "Count clicks %d pass %d"
 //go:embed *.txt
 var inputFS embed.FS
 
-func Run() string {
+func Run(filename string) string {
 	dial := NewDial()
 
-	lines, _ := utils.ReadLines(inputFS, "day01.txt")
+	lines, _ := utils.ReadLines(inputFS, filename)
 
 	for line := range lines {
 		order := NewOrder(lines[line])
