@@ -15,7 +15,7 @@ var inputFS embed.FS
 func Run() string {
 	dial := NewDial()
 
-	lines, _ := utils.ReadLines(inputFS, "input01.txt")
+	lines, _ := utils.ReadLines(inputFS, "day01.txt")
 
 	for line := range lines {
 		order := NewOrder(lines[line])
